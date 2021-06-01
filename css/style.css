@@ -1,3 +1,60 @@
+/* PREWORK */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+/*//////////////////////*/
+
+/*VARIABLES*/
+:root {
+  --color-black: #111010;
+  --color-white: #ffffff;
+}
+
+/*BODY*/
+.body {
+  background-color: var(--color-black);
+}
+
+/***HEADER***/
+header{
+  height: 15vh;
+  display: flex;
+}
+.main__head--logo {
+  color: var(--color-white);
+  font-family: "Monoton";
+  font-weight: 200;
+  font-size: 3.6rem;
+  text-align: center;
+  word-spacing:5pt;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 body {
   margin: 0;
   background: #dedede;
@@ -81,3 +138,5 @@ body {
 .hide {
   display: none;
 }
+
+*/
