@@ -3,6 +3,16 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  /**NOT SELECTABLE**/
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    
 }
 
 html {
@@ -26,6 +36,7 @@ html {
 .body {
   background-color: var(--color-black);
   min-width: 350px;
+  
 }
 
 /***HEADER***/
@@ -89,6 +100,7 @@ header {
   font-weight: 700;
   letter-spacing: 2pt;
   border-radius: 5px;
+  
 }
 .input-level input::placeholder {
   font-family: "Poppins", sans-serif;
@@ -98,6 +110,7 @@ header {
   font-weight: lighter;
   padding-left: 3pt;
 }
+
 
 /***================ LIGHTS ====================== ***/
 /*///////////////////////////////////////////////////*/
@@ -187,10 +200,16 @@ header {
   margin: auto;
   cursor: pointer;
   line-height: 2rem;
+  
 }
 
 .play-btn:hover {
   text-shadow: 0px 0px 50px var(--color-white);
+  
+}
+
+.play-btn:active{
+  color: #acacac;
 }
 
 /**=======CURRENT LEVEL ===========*/
@@ -199,6 +218,7 @@ header {
   height: calc(15vh - 20px);
   /*border: 1px solid white;*/
   display: flex;
+  visibility: hidden;
 }
 
 .cercle {
@@ -238,17 +258,18 @@ header {
   
 }
 
+/**CLASSES TO WORK WITH JS**/
+.hide{
+  display: none;
+}
 
+.show{
+  visibility: visible;
+}
 
+/*COLORS ON*/
 
-
-
-
-
-
-
-
-
+/*
 .color {
   width: 50%;
   height: 50%;
@@ -262,6 +283,7 @@ header {
 .right {
   float: left;
 }
+*/
 
 .red {
   background: var(--color-red);
