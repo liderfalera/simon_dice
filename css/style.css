@@ -19,14 +19,13 @@ html {
   --color-green: #33eb23;
   --color-blue: #2333eb;
   --color-yellow: #ebeb1c;
-  --color-overflow:  rgba(17, 16, 16, 0.9);
+  --color-overflow: rgba(17, 16, 16, 0.9);
 }
 
 /*BODY*/
 .body {
   background-color: var(--color-black);
   min-width: 350px;
-  max-height: 100vh;
 }
 
 /***HEADER***/
@@ -103,14 +102,14 @@ header {
 /***================ LIGHTS ====================== ***/
 /*///////////////////////////////////////////////////*/
 
-.lights{
+.lights {
   height: 50vh;
   width: 100%;
   /*border: 1px solid white;*/
   display: flex;
 }
 
-.lights-container{
+.lights-container {
   width: 300px;
   height: 300px;
   /*border: 1px solid blue;*/
@@ -118,22 +117,21 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
 }
 
-.red{
-  width: 143px; 
-  height: 143px; 
+.red {
+  width: 143px;
+  height: 143px;
 
   -moz-border-radius: 100% 10px 10px 10px;
   -webkit-border-radius: 100% 10px 10px 10px;
-  border-radius: 100% 10px 10px 10px ;
+  border-radius: 100% 10px 10px 10px;
 
   align-self: flex-start;
 }
-.green{
-  width: 143px; 
-  height: 143px; 
+.green {
+  width: 143px;
+  height: 143px;
 
   -moz-border-radius: 10px 100% 10px 10px;
   -webkit-border-radius: 10px 100% 10px 10px;
@@ -141,45 +139,44 @@ header {
 
   align-self: flex-start;
 }
-.blue{
-  width: 143px; 
-  height: 143px; 
+.blue {
+  width: 143px;
+  height: 143px;
 
   -moz-border-radius: 10px 10px 10px 100%;
-  -webkit-border-radius:10px 10px 10px 100%;
+  -webkit-border-radius: 10px 10px 10px 100%;
   border-radius: 10px 10px 10px 100%;
 
   align-self: flex-end;
 }
-.yellow{
-  width: 143px; 
-  height: 143px; 
+.yellow {
+  width: 143px;
+  height: 143px;
 
   -moz-border-radius: 10px 10px 100% 10px;
-  -webkit-border-radius: 10px 10px 100%  10px;
-  border-radius:10px 10px 100%  10px;
+  -webkit-border-radius: 10px 10px 100% 10px;
+  border-radius: 10px 10px 100% 10px;
 
   align-self: flex-end;
 }
 
 /*====SHADOW GUIDE LINE ===*/
-.shadow-guide{
-  /*border-top: 1px solid red;*/
+.shadow-guide {
+  /*border-top: 2px solid red;*/
   width: 100%;
 }
-.shadow-play{
+.shadow-play {
   height: 50vh;
   width: 100%;
   background-color: var(--color-overflow);
-  position: relative;
-  bottom: 50vh;
+  position: absolute;
+  top: calc(35vh + 20px);
   /*border: 1px solid yellow;*/
   display: flex;
 }
 
-
 /**PLAY BUTTON**/
-.play-btn{
+.play-btn {
   color: var(--color-white);
   font-weight: 500;
   font-size: 1.8rem;
@@ -192,24 +189,54 @@ header {
   line-height: 2rem;
 }
 
-.play-btn:hover{
+.play-btn:hover {
   text-shadow: 0px 0px 50px var(--color-white);
 }
 
 /**=======CURRENT LEVEL ===========*/
-.current-level{
+.current-level {
   width: 100%;
-  height: 15vh;
-  border: 1px solid teal;
-  position: relative;
-  top: 0;
+  height: calc(15vh - 20px);
+  /*border: 1px solid white;*/
+  display: flex;
 }
 
+.cercle {
+  
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin: auto;
+  display: flex;
+  background: linear-gradient(
+      217deg,
+      rgba(235, 51,35, 1),
+      rgba(255, 255,255, 0.5) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(247, 0, 255, 0.5) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(242, 255, 60, 0.5) 70.71%);
+  
+  
+}
 
-
-
-
-
+.cercle h3 {
+  display: flex;
+  color: var(--color-white);
+  word-spacing: .3rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-radius: 100%;
+  background-color: var(--color-black);
+  font-size: 1.4rem;
+  
+  
+  
+  
+}
 
 
 
@@ -237,7 +264,7 @@ header {
 }
 
 .red {
-  background:var(--color-red);
+  background: var(--color-red);
 }
 
 .red.light {
@@ -267,14 +294,6 @@ header {
 .yellow.light {
   background: #badc58;
 }
-
-
-
-
-
-
-
-
 
 /*
 

@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAME | Simon Says</title>
+    <link rel="icon" href="img/icon.png">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simon says</title>
+    <!--Typography-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!--Typography-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-  <!----------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------->
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="body">
-  <!--===-TITLE HEAD=========-->
-  <header>
-    <h1 class="main__head--logo">SIMON SAYS</h1>
-  </header>
+  <body class="body">
+    <!--===-TITLE HEAD=========-->
 
-  <!--===-SET LEVEL SECTION==-->
-  <section class="levels">
+    <header>
+      <h1 class="main__head--logo">SIMON SAYS</h1>
+    </header>
 
-    <div class="levels__star">
+    <!--===-SET LEVEL SECTION==-->
+    <section class="levels">
+      <div class="levels__star">
+        <img src="img/star-level.png" alt="star icon level" />
+        <h4 class="levels__star--text">LEVELS</h4>
+      </div>
 
-      <img src="img/star-level.png" alt="star icon level" />
-      <h4 class="levels__star--text">LEVELS</h4>
+      <div class="input-level">
+        <label for="set-level">
+          <input
+            type="number"
+            name="set-level"
+            id="set-level"
+            placeholder="example '10'"
+          />
+        </label>
+      </div>
+    </section>
 
+    <section class="lights">
+      <div class="lights-container">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+      </div>
+    </section>
+
+    <div class="shadow-guide">
+      <section class="shadow-play">
+        <h2 class="play-btn">PLAY<br />GAME</h2>
+      </section>
     </div>
+    
+    <section class="current-level">
+      <div class="cercle">
+        <h3>1 / 10</h3>
+      </div>
+    </section>
 
-    <div class="input-level">
-      <label for="set-level">
-        <input type="number" name="set-level" id="set-level" placeholder="example '10'">
-      </label>
-    </div>
-
-  </section>
-
-  <section class="lights">
-    <div class="lights-container">
-      <div class="red"></div>
-      <div class="green"></div>
-      <div class="blue"></div>
-      <div class="yellow"></div>
-
-    </div>
-  </section>
-  <div class="shadow-guide"></div>
-  <section class="shadow-play">
-    <h2 class="play-btn">PLAY<br>GAME</h2>
-  </section>
-
-  <section class="current-level">
-    <div class="cercle">
-      <h3></h3>
-    </div>
-  </section>
-
-  <!--
+    <!--
   <div class="gameboard">
     <div id="celeste" class="color celeste left" data-color="celeste"></div>
     <div id="violeta" class="color violeta right" data-color="violeta"></div>
@@ -73,8 +83,7 @@
 
   -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
