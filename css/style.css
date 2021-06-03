@@ -7,7 +7,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /*//////////////////////*/
 
@@ -15,15 +15,22 @@ html {
 :root {
   --color-black: #111010;
   --color-white: #ffffff;
+  --color-red: #eb3323;
+  --color-green: #33eb23;
+  --color-blue: #2333eb;
+  --color-yellow: #ebeb1c;
+  --color-overflow:  rgba(17, 16, 16, 0.9);
 }
 
 /*BODY*/
 .body {
   background-color: var(--color-black);
+  min-width: 350px;
+  max-height: 100vh;
 }
 
 /***HEADER***/
-header{
+header {
   height: 15vh;
   display: flex;
 }
@@ -33,17 +40,233 @@ header{
   font-weight: 200;
   font-size: 3.6rem;
   text-align: center;
-  word-spacing:5pt;
+  word-spacing: 5pt;
   align-items: center;
   justify-content: center;
   align-self: center;
   margin: auto;
 }
 
+/**SECTION OF SETTING LEVEL**/
+
+.levels {
+  /*border: 1px solid green;*/
+  height: 20vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.levels__star {
+  /*border: 1px solid red;*/
+  text-align: center;
+}
+
+.levels__star img {
+  width: 28px;
+}
+
+.levels__star h4 {
+  color: var(--color-white);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.input-level {
+  /*border: 1px solid red;*/
+  height: 32px;
+  width: 100px;
+}
+
+.input-level input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2pt;
+  border-radius: 5px;
+}
+.input-level input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: normal;
+  font-weight: lighter;
+  padding-left: 3pt;
+}
+
+/***================ LIGHTS ====================== ***/
+/*///////////////////////////////////////////////////*/
+
+.lights{
+  height: 50vh;
+  width: 100%;
+  /*border: 1px solid white;*/
+  display: flex;
+}
+
+.lights-container{
+  width: 300px;
+  height: 300px;
+  /*border: 1px solid blue;*/
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.red{
+  width: 143px; 
+  height: 143px; 
+
+  -moz-border-radius: 100% 10px 10px 10px;
+  -webkit-border-radius: 100% 10px 10px 10px;
+  border-radius: 100% 10px 10px 10px ;
+
+  align-self: flex-start;
+}
+.green{
+  width: 143px; 
+  height: 143px; 
+
+  -moz-border-radius: 10px 100% 10px 10px;
+  -webkit-border-radius: 10px 100% 10px 10px;
+  border-radius: 10px 100% 10px 10px;
+
+  align-self: flex-start;
+}
+.blue{
+  width: 143px; 
+  height: 143px; 
+
+  -moz-border-radius: 10px 10px 10px 100%;
+  -webkit-border-radius:10px 10px 10px 100%;
+  border-radius: 10px 10px 10px 100%;
+
+  align-self: flex-end;
+}
+.yellow{
+  width: 143px; 
+  height: 143px; 
+
+  -moz-border-radius: 10px 10px 100% 10px;
+  -webkit-border-radius: 10px 10px 100%  10px;
+  border-radius:10px 10px 100%  10px;
+
+  align-self: flex-end;
+}
+
+/*====SHADOW GUIDE LINE ===*/
+.shadow-guide{
+  /*border-top: 1px solid red;*/
+  width: 100%;
+}
+.shadow-play{
+  height: 50vh;
+  width: 100%;
+  background-color: var(--color-overflow);
+  position: relative;
+  bottom: 50vh;
+  /*border: 1px solid yellow;*/
+  display: flex;
+}
+
+
+/**PLAY BUTTON**/
+.play-btn{
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.8rem;
+  /*border: 1px solid green;*/
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  cursor: pointer;
+  line-height: 2rem;
+}
+
+.play-btn:hover{
+  text-shadow: 0px 0px 50px var(--color-white);
+}
+
+/**=======CURRENT LEVEL ===========*/
+.current-level{
+  width: 100%;
+  height: 15vh;
+  border: 1px solid teal;
+  position: relative;
+  top: 0;
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: left;
+}
+
+.red {
+  background:var(--color-red);
+}
+
+.red.light {
+  background: #7ed6df;
+}
+
+.green {
+  background: var(--color-green);
+}
+
+.green.light {
+  background: #e056fd;
+}
+
+.blue {
+  background: var(--color-blue);
+}
+
+.blue.light {
+  background: #ffbe76;
+}
+
+.yellow {
+  background: var(--color-yellow);
+}
+
+.yellow.light {
+  background: #badc58;
+}
 
 
 
