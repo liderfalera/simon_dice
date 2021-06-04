@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GAME | Simon Says</title>
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/icon.png" />
 
     <!--Typography-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -37,14 +37,16 @@
         <h4 class="levels__star--text">LEVELS</h4>
       </div>
 
-      <div class="input-level">
+      <div id="input-level" class="input-level">
         <label for="set-level">
           <input
             type="number"
-            min=1
+            min="1"
+            max="100"
             name="set-level"
             id="set-level"
             placeholder="example '10'"
+            
           />
         </label>
       </div>
@@ -61,11 +63,13 @@
 
     <div class="shadow-guide">
       <section id="startArea" class="shadow-play">
-        <h2 id="playBtn" class="play-btn" onclick="startGame()">PLAY<br />GAME</h2>
+        <h2 id="playBtn" class="play-btn" onclick="startGame()">
+          PLAY<br/>GAME
+        </h2>
       </section>
     </div>
-    
-    <section id="current-level"class="current-level">
+
+    <section id="current-level" class="current-level">
       <div class="cercle">
         <h3 id="progress-level">1 / 10</h3>
       </div>
@@ -83,6 +87,7 @@
   </div>
 
   -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="js/script2.js"></script>
