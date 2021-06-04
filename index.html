@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GAME | Simon Says</title>
-    <link rel="icon" href="img/icon.png">
+    <link rel="icon" href="img/icon.png" />
 
     <!--Typography-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -37,13 +37,16 @@
         <h4 class="levels__star--text">LEVELS</h4>
       </div>
 
-      <div class="input-level">
+      <div id="input-level" class="input-level">
         <label for="set-level">
           <input
             type="number"
+            min="1"
+            max="100"
             name="set-level"
             id="set-level"
             placeholder="example '10'"
+            
           />
         </label>
       </div>
@@ -51,22 +54,24 @@
 
     <section class="lights">
       <div class="lights-container">
-        <div class="red"></div>
-        <div class="green"></div>
-        <div class="blue"></div>
-        <div class="yellow"></div>
+        <div id="red" class="red" data-color="red"></div>
+        <div id="green" class="green" data-color="green"></div>
+        <div id="blue" class="blue" data-color="blue"></div>
+        <div id="yellow" class="yellow" data-color="yellow"></div>
       </div>
     </section>
 
     <div class="shadow-guide">
-      <section class="shadow-play">
-        <h2 class="play-btn">PLAY<br />GAME</h2>
+      <section id="startArea" class="shadow-play">
+        <h2 id="playBtn" class="play-btn" onclick="startGame()">
+          PLAY<br/>GAME
+        </h2>
       </section>
     </div>
-    
-    <section class="current-level">
+
+    <section id="current-level" class="current-level">
       <div class="cercle">
-        <h3>1 / 10</h3>
+        <h3 id="progress-level">1 / 10</h3>
       </div>
     </section>
 
@@ -82,8 +87,9 @@
   </div>
 
   -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
   </body>
 </html>
