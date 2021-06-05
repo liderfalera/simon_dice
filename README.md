@@ -1,6 +1,6 @@
 # SIMON SAYS | [View demo👁](https://liderfalera.github.io/simon_dice/)
 
-![Social preview](https://i.imgur.com/2PzrCfl.png)
+[![Social preview](https://i.imgur.com/2PzrCfl.png)](#)
 
 ## Description
 
